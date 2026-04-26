@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+.header-section {
+    /* background: #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10rem;
+
+}
+
+.header-section__logo img {
+    height: auto;
+    width: 13rem;
+    display: block;
+}
+
+.header-section__menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.header-section__menu p {
+    color: #002b12;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.header-section__auth p {
+    background: #002b12;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.main-section {
+    margin: 0rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section__text p {
+    color: #002b12;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    padding: 2rem 0rem;
+}
+
+.main-section__menus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-section__menus .menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.main-section__menus .active {
+    border-bottom: 2px solid #002b12;
+}
+
+.main-section__menus .menu:hover {
+    border-bottom: 2px solid #002b12;
+}
+
+.main-section__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    /* background: #00000019; */
+    width: 80%;
+    margin: 1.5rem 0rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 2.5rem;
+    border: 1px solid black;
+}
+
+.main-section__search i {
+    font-size: 1.5rem;
+    padding: 0rem 0.5rem;
+}
+
+.main-section__search input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.1rem;
+}
+
+.main-section__search p {
+    /* font-size: 1.5rem; */
+    background: #03d352;
+    padding: 0.8rem 1rem;
+    border-radius: 5rem;
+    font-weight: 600;
+    border: 1px solid #03943b;
+}
+
+.iconic-location-containner {
+    padding: 5rem 10rem;
+}
+
+.iconic-location-containner p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.locations {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.locations .location {
+    height: 18rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.locations .location img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.locations .location .name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-shadow: black 0rem 0rem 0.5rem;
+}
+
+
+
+.img-container img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+
+
+.footer-section {
+    /* height: 10rem; */
+    background: #f7f7f7;
+    padding: 2rem 0;
+
+}
+
+.footer-section__container {
+    margin: 0rem 10rem;
+    /* background: #ff000038; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.links-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.links p:first-child {
+    font-size: 1.1rem;
+    padding: 0.3rem 0rem;
+    cursor: auto;
+    text-decoration: none !important;
+}
+
+.links p {
+    font-size: 1rem;
+    color: rgb(87, 87, 87);
+    padding: 0.3rem 0rem;
+    cursor: pointer;
+}
+
+.links p:hover {
+    text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .header-section {
+        padding: 1rem 1rem;
+    }
+
+    .header-section__menu {
+        display: none;
+    }
+
+    .main-section__text p {
+        font-size: 3rem;
+    }
+
+    .main-section {
+        margin: 0rem 1rem;
+    }
+
+    .main-section__menus {
+        gap: 0.5rem;
+    }
+
+    .main-section__menus .menu {
+        font-size: 0.7rem;
+        gap: 0.2rem;
+    }
+
+    .main-section__search p {
+        padding: 0.5rem 1rem;
+    }
+
+    .iconic-location-containner {
+        padding: 5rem 1rem;
+    }
+    .locations .location{
+        height: 10rem;
+        width: 10rem;
+    }
+    .locations .location .name{
+        font-size: 1.2em;
+    }
+    .footer-section__container{
+        margin: 0rem 1rem;
+    }
+    .links p:first-child{
+        font-size: 0.8rem;
+    }
+    .links p{
+        font-size: 0.7rem;
+    }
+    .img-container img{
+        margin-bottom: 2rem;
+    }
+    .main-section__search input{
+        font-size: 0.8rem;
+    }
+    .main-section__search i{
+        font-size: 1.3rem;
+    }
+}
